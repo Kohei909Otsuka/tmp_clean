@@ -18,7 +18,7 @@ class TodoList
   # NOTE: 指定されたnameをもつTodoクラスのオブジェクトを
   # 追加する
   def append(todo_name)
-    id = @list.map {|todo| todo.id}.sort.last + 1
+    id = @list.map {|todo| todo.id}.sort.last.to_i + 1
     @list << Todo.new(id, todo_name)
   end
 

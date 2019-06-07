@@ -5,4 +5,8 @@ class Todo
     @id = id
     @name = name
   end
+
+  def format
+    return "{id: #{id}, name: #{name}}"
+  end
 end
